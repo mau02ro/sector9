@@ -5,11 +5,11 @@ import Image from '../../atoms/Image'
 
 import './category.css'
 
-const Category = ({ link, name, image }) => {
+const Category = ({ name, image, alt, link }) => {
   return (
     <Link to={link} className='category'>
       <h3 className='category_name'>{name}</h3>
-      <Image src={image.src} alt={image.alt} maxWidth='101px' />
+      <Image src={image} alt={alt} maxWidth='101px' />
     </Link>
   )
 }
