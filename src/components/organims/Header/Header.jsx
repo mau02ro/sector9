@@ -8,6 +8,8 @@ import Menu from '../../molecules/Menu'
 import './header.css'
 
 const Header = () => {
+  // const { pathname } = useLocation()
+
   return (
     <header>
       <Link to='/'>
