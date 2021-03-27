@@ -1,28 +1,24 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from "react";
 
-import Header from '../../organims/Header'
-import Onboarding from '../Onboarding'
+import Header from "../../organims/Header";
+import Onboarding from "../Onboarding";
 
-import './layout.css'
+import "./layout.css";
 
 const Layout = ({ children }) => {
-  const [visited, setVisited] = useState(
-    localStorage.getItem('visited') || false
-  )
+  const [visited, setVisited] = useState(false);
 
   const handleVisited = () => {
-    let status = localStorage.getItem('visited') || false
-    localStorage.setItem('visited', !status)
-    setVisited(localStorage.getItem('visited'))
-  }
+    setVisited(true);
+  };
 
   return (
-    <div className='layout'>
+    <div className="layout">
       <Header />
       <div>{children}</div>
-      {!visited && <Onboarding setVisited={handleVisited} />}
+      {/* {!visited && <Onboarding setVisited={handleVisited} />} */}
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
