@@ -1,0 +1,12 @@
+.product_card {
+  text-decoration: none;
+}
+.product_card-image {
+  min-height: 156px;
+  background: var(--background-products);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}

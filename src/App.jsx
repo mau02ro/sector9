@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
 // tamplate
-import Layout from './components/templates/Layout'
+import Layout from "./components/templates/Layout";
 //  router
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 // pages
-import Home from './pages/Home'
-// categories
-import Categories from './pages/Categories'
+import Home from "./pages/Home";
+import Categories from "./pages/Categories";
+import Catalogue from "./pages/Catalogue";
 
 // Styles
-import './styles/global.css'
-import './styles/colors.css'
+import "./styles/global.css";
+import "./styles/colors.css";
 
 const App = () => {
   return (
@@ -18,14 +18,19 @@ const App = () => {
       <BrowserRouter>
         <Layout>
           <Switch>
-            <Route exact path='/' component={Home} />
+            <Route exact path="/" component={Home} />
             {/* Categories */}
-            <Route exact path='/categories/:category' component={Categories} />
+            <Route exact path="/categories/:category" component={Categories} />
+            <Route
+              exact
+              path="/catalogue/:product/:category"
+              component={Catalogue}
+            />
           </Switch>
         </Layout>
       </BrowserRouter>
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default App
+export default App;

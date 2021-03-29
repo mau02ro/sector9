@@ -4,6 +4,16 @@
   line-height: 16px;
   letter-spacing: 0.2px;
   text-transform: uppercase;
-  margin-bottom: 16px;
   color: #ffffff;
+}
+.heading-primary {
+  margin-bottom: 16px;
+}
+.heading-tertiary {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.35px;
+  opacity: 0.5;
 }
