@@ -7,6 +7,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Categories from "./pages/Categories";
 import Catalogue from "./pages/Catalogue";
+import Product from "./pages/Product";
 
 // Styles
 import "./styles/global.css";
@@ -26,6 +27,7 @@ const App = () => {
               path="/catalogue/:product/:category"
               component={Catalogue}
             />
+            <Route exact path="/product/:id" component={Product} />
           </Switch>
         </Layout>
       </BrowserRouter>

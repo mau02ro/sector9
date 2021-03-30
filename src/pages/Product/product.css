@@ -1,0 +1,17 @@
+.pProduct {
+  padding-bottom: 16px;
+}
+.pProduct button {
+  margin-top: 55px;
+}
+.pProduct_image {
+  height: 360px;
+  background: var(--background-products);
+}
+
+.pProduct_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+}

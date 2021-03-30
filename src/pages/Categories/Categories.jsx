@@ -16,7 +16,7 @@ const Categories = ({ match: { params }, categories }) => {
   }, []);
 
   return (
-    <div className="">
+    <section className="wrapper">
       {category.name && <Heading>{category.name}</Heading>}
       {category.description && <Paragraph>{category.description}</Paragraph>}
       {category.subCategories && (
@@ -31,7 +31,7 @@ const Categories = ({ match: { params }, categories }) => {
           ))}
         </TemCategories>
       )}
-    </div>
+    </section>
   );
 };
 

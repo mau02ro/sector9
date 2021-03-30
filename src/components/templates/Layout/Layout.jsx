@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
   return (
     <div className="layout">
       <Header />
-      <div>{children}</div>
+      <div className="">{children}</div>
       {/* {!visited && <Onboarding setVisited={handleVisited} />} */}
     </div>
   );

@@ -1,10 +1,16 @@
-header {
+header .wrapper {
   height: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
 }
+.header_ligth .wrapper {
+  margin-bottom: 0 !important;
+}
 .header_logo {
   max-width: 80px;
+}
+.header_ligth {
+  background: var(--background-products);
 }

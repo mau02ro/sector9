@@ -1,0 +1,21 @@
+.button {
+  background: var(--primary-one);
+  color: var(--primary-two);
+  font-size: 14px;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* text-align: center; */
+  letter-spacing: 0.175px;
+  text-transform: uppercase;
+
+  color: #333333;
+}

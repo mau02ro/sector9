@@ -1,3 +1,11 @@
 .catalogue > p {
   margin-bottom: 16px;
 }
+.catalogue_alert {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.catalogue_alert h2 {
+  margin-bottom: 8px;
+}

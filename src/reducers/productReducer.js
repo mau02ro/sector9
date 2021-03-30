@@ -21,6 +21,7 @@ const INITIAL_STATE = {
 
     //tablas
     {
+      id: 1,
       product: "tablas",
       category: "classix",
       name: "basilisk deck",
@@ -58,6 +59,7 @@ const INITIAL_STATE = {
     },
 
     {
+      id: 2,
       product: "tablas",
       category: "classix",
       name: "paradise deck",
@@ -95,6 +97,7 @@ const INITIAL_STATE = {
     },
 
     {
+      id: 3,
       product: "tablas",
       category: "classix",
       name: "basilisk deck",
@@ -131,6 +134,8 @@ const INITIAL_STATE = {
     },
 
     {
+      id: 4,
+
       product: "tablas",
       category: "classix",
       name: "basilisk deck",
@@ -169,6 +174,8 @@ const INITIAL_STATE = {
 
     //bases
     {
+      id: 5,
+
       product: "bases",
       category: "classix",
       name: "Lorem ipsum",
@@ -200,6 +207,8 @@ const INITIAL_STATE = {
       ],
     },
     {
+      id: 6,
+
       product: "bases",
       category: "classix",
       name: "Lorem ipsum",
@@ -231,6 +240,8 @@ const INITIAL_STATE = {
       ],
     },
     {
+      id: 7,
+
       product: "bases",
       category: "classix",
       name: "Lorem ipsum",
@@ -262,6 +273,8 @@ const INITIAL_STATE = {
       ],
     },
     {
+      id: 8,
+
       product: "bases",
       category: "classix",
       name: "Lorem ipsum",
@@ -296,6 +309,8 @@ const INITIAL_STATE = {
 
     //llantas
     {
+      id: 9,
+
       product: "llantas",
       category: "classix",
       name: "Lorem ipsum",
@@ -327,6 +342,8 @@ const INITIAL_STATE = {
       ],
     },
     {
+      id: 10,
+
       product: "llantas",
       category: "classix",
       name: "Lorem ipsum",
@@ -358,6 +375,8 @@ const INITIAL_STATE = {
       ],
     },
     {
+      id: 11,
+
       product: "llantas",
       category: "classix",
       name: "Lorem ipsum",
@@ -389,6 +408,8 @@ const INITIAL_STATE = {
       ],
     },
     {
+      id: 12,
+
       product: "llantas",
       category: "classix",
       name: "Lorem ipsum",

@@ -9,6 +9,26 @@
 .heading-primary {
   margin-bottom: 16px;
 }
+.heading-primary-two {
+  letter-spacing: 0.4px;
+  color: var(--primary-one);
+  mix-blend-mode: normal;
+  margin-bottom: 16px;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.heading-secondary {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
 .heading-tertiary {
   font-style: normal;
   font-weight: 500;

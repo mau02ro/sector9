@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import Heading from "../../components/atoms/Heading";
 import Paragraph from "../../components/atoms/Paragraph";
+import Button from "../../components/atoms/Button";
 import Product from "../../components/molecules/Product";
 
 import TemCatalogue from "../../components/organims/TemCatalogue";
@@ -11,6 +12,7 @@ import "./Catalogue.css";
 
 const Catalogue = ({
   match: { params },
+  history: { goBack },
   CategoriesReducer: { categories },
   ProductReducer: { products },
 }) => {
@@ -40,7 +42,7 @@ const Catalogue = ({
   }, []);
 
   return (
-    <div className="catalogue">
+    <section className="catalogue wrapper">
       <Heading>{category.name}</Heading>
       <Paragraph>{category.description}</Paragraph>
       {productsData.length ? (
@@ -53,9 +55,12 @@ const Catalogue = ({
           ))}
         </TemCatalogue>
       ) : (
-        <p>Hola</p>
+        <div className="catalogue_alert">
+          <Heading type="tertiary">No hay invertadio DISPONIBLE.</Heading>
+          <Button action={goBack}>Regresar</Button>
+        </div>
       )}
-    </div>
+    </section>
   );
 };
 

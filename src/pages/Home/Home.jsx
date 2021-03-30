@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import { connect } from 'react-redux'
+import { connect } from "react-redux";
 
-import Heading from '../../components/atoms/Heading'
-import Paragraph from '../../components/atoms/Paragraph'
-import Category from '../../components/molecules/Category'
-import TemCategories from '../../components/organims/TemCategories'
+import Heading from "../../components/atoms/Heading";
+import Paragraph from "../../components/atoms/Paragraph";
+import Category from "../../components/molecules/Category";
+import TemCategories from "../../components/organims/TemCategories";
 
 const Home = ({ categories }) => {
   return (
-    <section>
+    <section className="wrapper">
       <Heading>Home</Heading>
       <Paragraph>
         Arma la patineta que siempre has soñado, personaliza eligiendo cada una
@@ -27,9 +27,9 @@ const Home = ({ categories }) => {
         ))}
       </TemCategories>
     </section>
-  )
-}
+  );
+};
 
-const mapStateToProps = ({ CategoriesReducer }) => CategoriesReducer
+const mapStateToProps = ({ CategoriesReducer }) => CategoriesReducer;
 
-export default connect(mapStateToProps)(Home)
+export default connect(mapStateToProps)(Home);
