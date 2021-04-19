@@ -8,6 +8,7 @@
 }
 .heading-primary {
   margin-bottom: 16px;
+  width: 60%;
 }
 .heading-primary-two {
   letter-spacing: 0.4px;
@@ -16,6 +17,7 @@
   margin-bottom: 16px;
   font-weight: 300;
   opacity: 0.8;
+  white-space: nowrap;
 }
 
 .heading-secondary {
