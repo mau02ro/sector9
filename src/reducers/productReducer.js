@@ -29,8 +29,8 @@ const INITIAL_STATE = {
         "Un descendiente directo y más corto de nuestro Pin OG, el Basilisk fácil de montar está listo para establecer algunas líneas clásicas. ¡Ábrase camino por el paseo marítimo de noche o de día con las ruedas Lumithane de 67 mm, con núcleos LED que alimentan el uretano Glow in the Dark! Si eso no fue suficiente para iluminar tu camino, el mazo negro completamente sumergido presenta un gráfico de Glow in the Dark que brilla sin importar la hora del día.",
       price: "72.00",
       images: [
-        "https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/product%2Fboards-classix-product-1-1.png?alt=media&token=a5d424e9-7373-4d12-ae13-e82415a50aca",
-        "https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/product%2Fboards-classix-product-1-2.png?alt=media&token=df5278cc-481e-44b6-ac8d-a0c2f6f033b7",
+        "https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/product%2Fboards-classix-product-1-1.png?alt=media&token=98eee2ae-9f9f-4bf3-b284-c11ded3574de",
+        "https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/product%2Fboards-classix-product-1-2.png?alt=media&token=72e7b23d-6b9d-4f5b-b7df-ead6196f662a",
       ],
       about: [
         {
