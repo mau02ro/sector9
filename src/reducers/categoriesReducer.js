@@ -33,60 +33,46 @@ const INITIAL_STATE = {
     {
       name: "bases",
       description:
-        "Estas bases han resistido la prueba del tiempo y continúan rodando milla tras milla, todo sobre el mundo.",
+        "Estamos orgullosos de utilizar las bases de nuestra empresa hermana, Gullwing, para todos nuestros productos.",
       image:
         "https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/categories%2Fbases.png?alt=media&token=e54a685e-8d58-48bb-b8d5-b80d03269409",
       subCategories: [
         {
-          name: "classix",
+          name: "reverse",
           description:
-            "Si las bases fáciles de montar en la serie Classix dan ganas de dejar todo lo que estás haciendo y viajar a un lugar hermoso (con tu patineta, por supuesto), entonces hemos hecho nuestro trabajo.",
+            "Como su nombre lo indica, nuestras Bases Reverse cuentan con un estilo de perno rey inverso y se utilizan mejor para tallar y descender, y el perno estriado se mantiene seguro en su lugar mientras se conduce todo tipo de terreno.",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/categories%2Fbases-classix.png?alt=media&token=13bbf104-90aa-4530-9663-62f6ea35faf4",
+            "https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/categories%2Fbases-reverse.png?alt=media&token=c1e47558-b856-4dea-acbc-f276996bc0ea",
         },
         {
-          name: "downhill",
+          name: "sidewinder ii",
           description:
-            "Si las bases fáciles de montar en la serie Downhillte dan ganas de dejar todo lo que estás haciendo y viajar a un lugar hermoso (con tu patineta, por supuesto), entonces hemos hecho nuestro trabajo.",
+            "Sidewinder II presentan un estilo patentado de doble perno rey y el más adecuado para tallar. ¡Los Kingpins moleteados permanecen seguros en su lugar mientras conduces y te permitirán tallar más fuerte, más profundo y más liso de lo que jamás hayas imaginado!",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/categories%2Fbases-downhill.png?alt=media&token=83690c6c-bec7-4374-86e3-a777c865bb96",
-        },
-        {
-          name: "platinum",
-          description:
-            "Si las bases fáciles de montar en la serie Platinum dan ganas de dejar todo lo que estás haciendo y viajar a un lugar hermoso (con tu patineta, por supuesto), entonces hemos hecho nuestro trabajo.",
-          image:
-            "https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/categories%2Fbases-platinum.png?alt=media&token=d32ee87e-b3df-4ca2-9344-1bb491e84af3",
+            "https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/categories%2Fbases-sidewinder%20ii.png?alt=media&token=a7f5b1b9-a3f8-41b8-bd72-a86fc393cc12",
         },
       ],
     },
     {
       name: "llantas",
       description:
-        "Estas llantas han resistido la prueba del tiempo y continúan rodando milla tras milla, todo sobre el mundo.",
+        "Sin lugar a dudas, un buen juego de ruedas puede convertir una tabla promedio en una buena.",
       image:
         "https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/categories%2Ftires.png?alt=media&token=e75eb480-9f5a-403f-b88e-f4455e0c838b",
       subCategories: [
         {
-          name: "classix",
+          name: "nineballs",
           description:
-            "Si las llantas fáciles de montar en la serie Classix dan ganas de dejar todo lo que estás haciendo y viajar a un lugar hermoso (con tu patineta, por supuesto), entonces hemos hecho nuestro trabajo.",
+            "Nuestras Nineballs han sido durante mucho tiempo las favoritas de los patinadores de todos los ámbitos de la vida. Desde niños de crucero hasta cargadores de freeride, tenemos algo para todos en esta colección.",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/categories%2Ftires-classix.png?alt=media&token=e9f97af8-277d-4c09-aebd-ca5ff3806d4d",
+            "https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/categories%2Fwheels-nineballs.png?alt=media&token=900056d9-4fb9-4f96-90d1-663ca9d53d99",
         },
         {
-          name: "downhill",
+          name: "race formula",
           description:
-            "Si las llantas fáciles de montar en la serie Downhillte dan ganas de dejar todo lo que estás haciendo y viajar a un lugar hermoso (con tu patineta, por supuesto), entonces hemos hecho nuestro trabajo.",
+            "Una de nuestras consignas desde hace mucho tiempo aquí en el Sector 9 es '¡Si no ganas la carrera, gana la fiesta!', ¡Pero estamos bastante seguros de que nuestra fórmula de carrera te ayudará a cruzar la línea de meta primero!.",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/categories%2Ftires-downhill.png?alt=media&token=8aa5c4ac-4f73-4b45-b22e-74df21804f11",
-        },
-        {
-          name: "platinum",
-          description:
-            "Si las llantas fáciles de montar en la serie Platinum dan ganas de dejar todo lo que estás haciendo y viajar a un lugar hermoso (con tu patineta, por supuesto), entonces hemos hecho nuestro trabajo.",
-          image:
-            "https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/categories%2Ftires-platinum.png?alt=media&token=0c46c205-d5dd-4db7-8522-afa176781261",
+            "https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/categories%2Fwheels-raceFormula.png?alt=media&token=792a204b-138c-4ab2-a8fb-ed8841a09f42",
         },
       ],
     },

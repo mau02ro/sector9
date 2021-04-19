@@ -13,17 +13,18 @@ const ProductImage = ({ images }) => {
       <Image src={images[index]} />
       {console.log(images)}
       <div className="productImage_options">
-        {images.map((image, key) => (
-          <div
-            className={classNames("productImage_item", {
-              "productImage_item-active": key === index,
-            })}
-            key={`productImage_options-${key}`}
-            onClick={() => setIndex(key)}
-          >
-            <Image src={image} />
-          </div>
-        ))}
+        {images.length > 1 &&
+          images.map((image, key) => (
+            <div
+              className={classNames("productImage_item", {
+                "productImage_item-active": key === index,
+              })}
+              key={`productImage_options-${key}`}
+              onClick={() => setIndex(key)}
+            >
+              <Image src={image} />
+            </div>
+          ))}
       </div>
     </div>
   );

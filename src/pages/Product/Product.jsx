@@ -31,7 +31,9 @@ const Product = ({ match: { params }, products }) => {
               <Heading>{product.name}</Heading>
               <Heading type="primary-two">$ {product.price} USD</Heading>
             </div>
-            <Paragraph>{product.description}</Paragraph>
+            {product.description && (
+              <Paragraph>{product.description}</Paragraph>
+            )}
             <ProductFeatures about={product.about} />
             {/* //TODO: añadir al carrito */}
             <Button action={() => console.log("añadir al carrito")}>
