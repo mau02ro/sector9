@@ -1,4 +1,7 @@
-import { SHOPPING_CART_TYPE } from "../types/appReducer";
+import {
+  ADD_SHOPPING_CART_TYPE,
+  REMOVE_SHOPPING_CART_TYPE,
+} from "../types/appReducer";
 
 const INITIAL_STATE = {
   shoppingCart: [],
@@ -8,10 +11,16 @@ const INITIAL_STATE = {
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case SHOPPING_CART_TYPE:
+    case ADD_SHOPPING_CART_TYPE:
+      state.shoppingCart.push(action.payload);
+      return state;
+
+    case REMOVE_SHOPPING_CART_TYPE:
       return {
         ...state,
-        shoppingCart: [...state.shoppingCart, action.payload],
+        shoppingCart: state.shoppingCart.filter(
+          (item) => item !== action.payload
+        ),
       };
 
     default:
