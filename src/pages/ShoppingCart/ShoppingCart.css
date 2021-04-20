@@ -1,0 +1,15 @@
+.shoppingCart_info {
+  display: flex;
+}
+.shoppingCart_info > * {
+  width: max-content;
+}
+.shoppingCart_info > *:first-child {
+  margin-right: 15px;
+}
+
+.shoppingCart_grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 32px;
+}

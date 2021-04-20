@@ -1,0 +1,22 @@
+.cartCard {
+  display: flex;
+  position: relative;
+}
+.cartCard_content {
+  margin-left: 16px;
+  width: 100%;
+}
+.cartCard_content h2 {
+  width: 70%;
+}
+.cartCard_image {
+  background: var(--background-products);
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.cartCard_icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

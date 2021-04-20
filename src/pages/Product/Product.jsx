@@ -10,9 +10,11 @@ import Button from "../../components/atoms/Button";
 import CartOperations from "../../components/templates/CartOperations";
 import AddToCart from "../../components/molecules/AddToCart";
 
+import { addToCart } from "../../actions/shoppingCartActions";
+
 import "./product.css";
 
-const Product = ({ match: { params }, products }) => {
+const Product = ({ match: { params }, products, addToCart }) => {
   const [product, setProduct] = useState({});
   const [controllCartOperations, setCartOperations] = useState(false);
 
@@ -22,6 +24,11 @@ const Product = ({ match: { params }, products }) => {
     )[0];
     setProduct(pro);
   }, []);
+
+  const handleAddToCart = () => {
+    addToCart(product.id);
+    setCartOperations(true);
+  };
 
   return (
     <Fragment>
@@ -39,10 +46,7 @@ const Product = ({ match: { params }, products }) => {
               <Paragraph>{product.description}</Paragraph>
             )}
             <ProductFeatures about={product.about} />
-            {/* //TODO: añadir al carrito */}
-            <Button action={() => setCartOperations(true)}>
-              Añadir al carrito
-            </Button>
+            <Button action={handleAddToCart}>Añadir al carrito</Button>
           </div>
           <CartOperations
             controller={controllCartOperations}
@@ -57,5 +61,8 @@ const Product = ({ match: { params }, products }) => {
 };
 
 const mapStateToProps = ({ ProductReducer }) => ProductReducer;
+const mapDispatchToProps = {
+  addToCart,
+};
 
-export default connect(mapStateToProps)(Product);
+export default connect(mapStateToProps, mapDispatchToProps)(Product);

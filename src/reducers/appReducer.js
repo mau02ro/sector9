@@ -4,7 +4,7 @@ import {
 } from "../types/appReducer";
 
 const INITIAL_STATE = {
-  shoppingCart: [],
+  shoppingCart: [1, 5, 10, 3],
   loading: false,
   error: null,
 };
