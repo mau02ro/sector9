@@ -7,10 +7,14 @@ import ProductFeatures from "../../components/molecules/ProductFeatures";
 import ProductImage from "../../components/molecules/ProductImage";
 import Button from "../../components/atoms/Button";
 
+import CartOperations from "../../components/templates/CartOperations";
+import AddToCart from "../../components/molecules/AddToCart";
+
 import "./product.css";
 
 const Product = ({ match: { params }, products }) => {
   const [product, setProduct] = useState({});
+  const [controllCartOperations, setCartOperations] = useState(false);
 
   useEffect(() => {
     let pro = products.filter(
@@ -36,10 +40,16 @@ const Product = ({ match: { params }, products }) => {
             )}
             <ProductFeatures about={product.about} />
             {/* //TODO: añadir al carrito */}
-            <Button action={() => console.log("añadir al carrito")}>
+            <Button action={() => setCartOperations(true)}>
               Añadir al carrito
             </Button>
           </div>
+          <CartOperations
+            controller={controllCartOperations}
+            close={() => setCartOperations(false)}
+          >
+            <AddToCart {...product} />
+          </CartOperations>
         </div>
       )}
     </Fragment>

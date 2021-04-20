@@ -31,6 +31,16 @@
   margin-bottom: 8px;
 }
 
+.heading-secondary-two {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  color: var(--primary-one);
+  mix-blend-mode: normal;
+  margin-bottom: 8px;
+}
+
 .heading-tertiary {
   font-style: normal;
   font-weight: 500;

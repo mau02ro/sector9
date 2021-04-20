@@ -11,7 +11,6 @@ const ProductImage = ({ images }) => {
   return (
     <div className="productImage">
       <Image src={images[index]} />
-      {console.log(images)}
       <div className="productImage_options">
         {images.length > 1 &&
           images.map((image, key) => (

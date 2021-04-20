@@ -1,0 +1,24 @@
+.cartOperations {
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #151e22a8;
+}
+.cartOperations_content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  background: #000000;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.cartOperations_close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}

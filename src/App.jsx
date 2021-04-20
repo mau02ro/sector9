@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Categories from "./pages/Categories";
 import Catalogue from "./pages/Catalogue";
 import Product from "./pages/Product";
+import ShoppingCart from "./pages/ShoppingCart";
 
 // Styles
 import "./styles/global.css";
@@ -28,6 +29,7 @@ const App = () => {
               component={Catalogue}
             />
             <Route exact path="/product/:id" component={Product} />
+            <Route exact path="/shopping-cart" component={ShoppingCart} />
           </Switch>
         </Layout>
       </BrowserRouter>

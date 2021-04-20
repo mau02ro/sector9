@@ -1,0 +1,30 @@
+.addToCart_content {
+  margin-bottom: 48px;
+}
+.addToCart_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.addToCart_header h2 {
+  margin-bottom: 0;
+}
+.addToCart_header picture {
+  margin-right: 8px;
+}
+
+.addToCart_product {
+  display: flex;
+}
+.addToCart_product span {
+  background: var(--background-products);
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 8px;
+  width: 89px;
+  height: 89px;
+}
+
+.addToCart_buttons > *:first-child {
+  margin-bottom: 16px;
+}
