@@ -14,7 +14,9 @@ const Header = ({ location: { pathname } }) => {
 
   return (
     <header
-      className={classNames({ header_ligth: pathname.includes("/product/") })}
+      className={classNames("header", {
+        header_ligth: pathname.includes("/product/"),
+      })}
     >
       <div className="wrapper">
         <Link to="/">

@@ -5,11 +5,11 @@ import Heading from "../../atoms/Heading";
 
 import "./CartCard.css";
 
-const CartCard = ({ id, images, name, price, children }) => {
+const CartCard = ({ id, images, name, price, children, actionIcon }) => {
   return (
     <div className="cartCard">
       {children && (
-        <span onClick={() => console.log(id)} className="cartCard_icon">
+        <span onClick={actionIcon && actionIcon} className="cartCard_icon">
           {children}
         </span>
       )}

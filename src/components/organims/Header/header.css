@@ -1,4 +1,4 @@
-header .wrapper {
+.header .wrapper {
   height: 64px;
   display: flex;
   justify-content: space-between;

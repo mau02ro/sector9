@@ -5,13 +5,13 @@ import Image from "../../atoms/Image";
 
 import "./CartOperations.css";
 
-const CartOperations = ({ children, controller, close }) => {
+const CartOperations = ({ children, className = "", controller, close }) => {
   if (!controller) {
     return null;
   }
 
   return ReactDOM.createPortal(
-    <div className="cartOperations">
+    <div className={`cartOperations ${className}`}>
       <div className="cartOperations_content">
         <span className="cartOperations_close" onClick={close}>
           <Image

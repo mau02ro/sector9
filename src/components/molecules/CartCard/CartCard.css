@@ -4,7 +4,7 @@
 }
 .cartCard_content {
   margin-left: 16px;
-  width: 100%;
+  width: 60%;
 }
 .cartCard_content h2 {
   width: 70%;
@@ -13,6 +13,8 @@
   background: var(--background-products);
   display: inline-block;
   border-radius: 5px;
+  width: 89px;
+  height: 89px;
 }
 
 .cartCard_icon {
