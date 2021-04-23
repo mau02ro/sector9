@@ -7,7 +7,10 @@
 .pProduct_image {
   background: var(--background-products);
 }
-
+.pProduct_head-title {
+  width: 60%;
+  line-height: 1.4rem;
+}
 .pProduct_head {
   display: flex;
   align-items: flex-start;

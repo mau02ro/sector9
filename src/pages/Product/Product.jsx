@@ -39,7 +39,7 @@ const Product = ({ match: { params }, products, addToCart }) => {
           </div>
           <div className="wrapper">
             <div className="pProduct_head">
-              <Heading>{product.name}</Heading>
+              <Heading className="pProduct_head-title">{product.name}</Heading>
               <Heading type="primary-two">$ {product.price} USD</Heading>
             </div>
             {product.description && (
