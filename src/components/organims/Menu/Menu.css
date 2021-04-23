@@ -1,0 +1,33 @@
+.menu {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000000000000000;
+  background: #111111;
+  padding: 16px;
+  transform: translateX(-100%);
+  transition: 0.3s;
+}
+.menu_open {
+  transform: translateX(0);
+}
+.menu_logo {
+  margin-bottom: 17px;
+  height: 30px;
+}
+.menu_list {
+  list-style: none;
+}
+.menu_link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  height: 48px;
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  opacity: 0.8;
+}

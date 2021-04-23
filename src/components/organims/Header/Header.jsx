@@ -9,7 +9,7 @@ import IconsHeader from "../../molecules/IconsHeader";
 
 import "./header.css";
 
-const Header = ({ history: { goBack }, location: { pathname } }) => {
+const Header = ({ history: { goBack }, location: { pathname }, openMenu }) => {
   return (
     <header
       className={classNames("header", {
@@ -35,7 +35,7 @@ const Header = ({ history: { goBack }, location: { pathname } }) => {
             />
           </Link>
         )}
-        <IconsHeader />
+        <IconsHeader openMenu={openMenu} />
       </div>
     </header>
   );
