@@ -14,3 +14,14 @@
 .header_ligth {
   background: var(--background-products);
 }
+.header_goBack {
+  display: flex;
+  align-items: center;
+  color: var(--primary-one);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+.header_goBack picture {
+  transform: rotateZ(-180deg);
+  margin-right: 5px;
+}
