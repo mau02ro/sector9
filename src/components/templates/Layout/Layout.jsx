@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
       <div className="">{children}</div>
 
       <Menu open={controllerMenu} close={() => setControllerMenu(false)} />
-      {/* {!visited && <Onboarding setVisited={handleVisited} />} */}
+      {!visited && <Onboarding setVisited={handleVisited} />}
     </div>
   );
 };
