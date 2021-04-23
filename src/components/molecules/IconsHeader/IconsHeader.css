@@ -1,7 +1,7 @@
-.menu_icons {
+.iconsHeader_icons {
   display: flex;
   align-items: center;
 }
-.menu_icons picture:last-child {
+.iconsHeader_icons picture:last-child {
   margin-left: 34px;
 }

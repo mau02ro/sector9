@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 import Image from "../../atoms/Image";
 
-import "./menu.css";
+import "./IconsHeader.css";
 
-const Menu = () => {
+const IconsHeader = () => {
   return (
     <div>
-      <div className="menu_icons">
+      <div className="iconsHeader_icons">
         <Link to="/shopping-cart">
           <Image
             src="https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/icon%2Fshopping-cart.svg?alt=media&token=e4d82c4f-cee5-4710-991d-46d2330e3305"
@@ -27,4 +27,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default IconsHeader;

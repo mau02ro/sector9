@@ -5,7 +5,7 @@ import classNames from "classnames";
 
 // Components
 import Image from "../../atoms/Image";
-import Menu from "../../molecules/Menu";
+import IconsHeader from "../../molecules/IconsHeader";
 
 import "./header.css";
 
@@ -35,7 +35,7 @@ const Header = ({ history: { goBack }, location: { pathname } }) => {
             />
           </Link>
         )}
-        <Menu />
+        <IconsHeader />
       </div>
     </header>
   );
