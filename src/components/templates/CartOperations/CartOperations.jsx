@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import PropTypes from "prop-types";
 
 import Image from "../../atoms/Image";
 
 import "./CartOperations.css";
 
-const CartOperations = ({ children, className = "", controller, close }) => {
+const CartOperations = ({ children, className, controller, close }) => {
   if (!controller) {
     return null;
   }
@@ -25,6 +26,17 @@ const CartOperations = ({ children, className = "", controller, close }) => {
     </div>,
     document.getElementById("cartOperations")
   );
+};
+
+CartOperations.propTypes = {
+  children: PropTypes.element.isRequired,
+  className: PropTypes.string,
+  controller: PropTypes.bool.isRequired,
+  close: PropTypes.func.isRequired,
+};
+
+CartOperations.defaultProps = {
+  className: "",
 };
 
 export default CartOperations;
