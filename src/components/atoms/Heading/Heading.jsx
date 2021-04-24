@@ -9,7 +9,13 @@ const Heading = ({ children, type, className }) => {
 
 Heading.propTypes = {
   children: PropTypes.string.isRequired,
-  type: PropTypes.string,
+  type: PropTypes.oneOf([
+    "primary",
+    "primary-two",
+    "secondary",
+    "secondary-two",
+    "tertiary",
+  ]),
   className: PropTypes.string,
 };
 
