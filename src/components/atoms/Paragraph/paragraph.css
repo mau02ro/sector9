@@ -5,5 +5,5 @@
   letter-spacing: 0.175px;
   mix-blend-mode: normal;
   opacity: 0.5;
-  color: #ffffff;
+  color: var(--color-text);
 }

@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import PropTypes from "prop-types";
 
-import './paragraph.css'
+import "./paragraph.css";
 
 const Paragraph = ({ children }) => {
-  return <p className='paragraph'>{children}</p>
-}
+  return <p className="paragraph">{children}</p>;
+};
 
-export default Paragraph
+Paragraph.propTypes = {
+  children: PropTypes.string.isRequired,
+};
+
+export default Paragraph;
