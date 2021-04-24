@@ -6,7 +6,6 @@ import Heading from "../../components/atoms/Heading";
 import Paragraph from "../../components/atoms/Paragraph";
 import Button from "../../components/atoms/Button";
 import Product from "../../components/molecules/Product";
-
 import TemCatalogue from "../../components/organims/TemCatalogue";
 
 import "./Catalogue.css";
