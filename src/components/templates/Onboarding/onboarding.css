@@ -32,7 +32,7 @@
   max-width: 279px;
   text-align: center;
   letter-spacing: 0.2625px;
-  color: #ffffff;
+  color: var(--color-text);
   margin: auto;
   opacity: 0.5;
   margin-bottom: 60px;
@@ -43,7 +43,6 @@
   margin: auto;
   display: flex;
 }
-
 .onboarding_previous {
   position: absolute;
   left: 0;
@@ -52,7 +51,6 @@
   position: absolute;
   right: 0;
 }
-
 .onboarding_page {
   display: inline-block;
   margin: auto;
@@ -60,7 +58,7 @@
 .onboarding_page-item {
   width: 8px;
   height: 8px;
-  background: #f9d704;
+  background: var(--primary-one);
   opacity: 0.5;
   display: inline-block;
   border-radius: 50%;
