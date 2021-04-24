@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import Image from "../../atoms/Image";
 import Heading from "../../atoms/Heading";
@@ -15,6 +16,12 @@ const Product = ({ images, name, id }) => {
       <Heading type="tertiary">{name}</Heading>
     </Link>
   );
+};
+
+Product.propTypes = {
+  images: PropTypes.array.isRequired,
+  name: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
 };
 
 export default Product;
