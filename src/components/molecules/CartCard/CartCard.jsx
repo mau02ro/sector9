@@ -1,11 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import Image from "../../atoms/Image";
 import Heading from "../../atoms/Heading";
 
 import "./CartCard.css";
 
-const CartCard = ({ id, images, name, price, children, actionIcon }) => {
+const CartCard = ({ image, name, price, children, actionIcon }) => {
   return (
     <div className="cartCard">
       {children && (
@@ -14,7 +15,7 @@ const CartCard = ({ id, images, name, price, children, actionIcon }) => {
         </span>
       )}
       <div className="cartCard_image">
-        <Image src={images[0]} maxWidth="89px" alt={name} />
+        <Image src={image} maxWidth="89px" alt={name} />
       </div>
       <div className="cartCard_content">
         <Heading type="secondary">{name}</Heading>
@@ -22,6 +23,14 @@ const CartCard = ({ id, images, name, price, children, actionIcon }) => {
       </div>
     </div>
   );
+};
+
+CartCard.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  children: PropTypes.element,
+  actionIcon: PropTypes.func,
 };
 
 export default CartCard;
