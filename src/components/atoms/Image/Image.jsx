@@ -1,13 +1,20 @@
-import React from 'react'
+import React from "react";
+import PropTypes from "prop-types";
 
-import './image.css'
+import "./image.css";
 
 const Image = ({ src, alt, maxWidth }) => {
   return (
-    <picture className='image' style={{ maxWidth }}>
+    <picture className="image" style={{ maxWidth }}>
       <img src={src} alt={alt} />
     </picture>
-  )
-}
+  );
+};
 
-export default Image
+Image.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  maxWidth: PropTypes.string,
+};
+
+export default Image;
