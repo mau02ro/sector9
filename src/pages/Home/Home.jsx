@@ -36,4 +36,4 @@ Home.propTypes = {
 
 const mapStateToProps = ({ CategoriesReducer }) => CategoriesReducer;
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps, null)(Home);
