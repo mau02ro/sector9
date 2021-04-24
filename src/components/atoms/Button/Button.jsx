@@ -15,14 +15,14 @@ const Button = ({ children, action, type }) => {
 Button.propTypes = {
   children: PropTypes.string.isRequired,
   action: PropTypes.func.isRequired,
-  type: PropTypes.string,
+  type: PropTypes.oneOf(["primary", "danger", "outline"]),
 };
 
 Button.defaultProps = {
   type: "primary",
 };
 
-const Button_Link = ({ href, children, type = "primary" }) => {
+const Button_Link = ({ href, children, type }) => {
   return (
     <Link to={href} className={`button button-${type}`}>
       {children}
@@ -33,7 +33,7 @@ const Button_Link = ({ href, children, type = "primary" }) => {
 Button_Link.propTypes = {
   children: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
-  type: PropTypes.string,
+  type: PropTypes.oneOf(["primary", "danger", "outline"]),
 };
 
 Button_Link.defaultProps = {
