@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { withRouter, useLocation } from "react-router";
+import { withRouter } from "react-router";
 import classNames from "classnames";
+import PropTypes from "prop-types";
 
-// Components
 import Image from "../../atoms/Image";
 import IconsHeader from "../../molecules/IconsHeader";
 
@@ -21,7 +21,7 @@ const Header = ({ history: { goBack }, location: { pathname }, openMenu }) => {
           <span onClick={goBack} className="header_goBack">
             <Image
               src="https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/icon%2Farrow.svg?alt=media&token=f7ed69f0-d3e2-4771-b5ce-07f94efdf035"
-              alt="Arrow"
+              alt="Flecha regresas - Icon"
               maxWidth="10px"
             />
             Volver
@@ -30,7 +30,7 @@ const Header = ({ history: { goBack }, location: { pathname }, openMenu }) => {
           <Link to="/">
             <Image
               src="https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/logos%2Fsmall.png?alt=media&token=9384109f-8c79-4d4a-a885-bb7c6e4f2827"
-              alt="Logo"
+              alt="Logo - Sector9"
               maxWidth="80px"
             />
           </Link>
@@ -39,6 +39,12 @@ const Header = ({ history: { goBack }, location: { pathname }, openMenu }) => {
       </div>
     </header>
   );
+};
+
+Header.propTypes = {
+  goBack: PropTypes.func.isRequired,
+  pathname: PropTypes.string.isRequired,
+  openMenu: PropTypes.func.isRequired,
 };
 
 export default withRouter(Header);
