@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
       <Header openMenu={() => setControllerMenu(true)} />
       <Menu open={controllerMenu} close={() => setControllerMenu(false)} />
       <div className="layout_content">{children}</div>
-      {!visited && <Onboarding setVisited={() => setVisited(true)} />}
+      {/* {!visited && <Onboarding setVisited={() => setVisited(true)} />} */}
     </div>
   );
 };

@@ -13,7 +13,7 @@ const Button = ({ children, action, type }) => {
 };
 
 Button.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.any.isRequired,
   action: PropTypes.func.isRequired,
   type: PropTypes.oneOf(["primary", "danger", "outline"]),
 };
@@ -31,7 +31,7 @@ const Button_Link = ({ href, children, type }) => {
 };
 
 Button_Link.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.any.isRequired,
   href: PropTypes.string.isRequired,
   type: PropTypes.oneOf(["primary", "danger", "outline"]),
 };

@@ -10,7 +10,7 @@ export const addToCart = (id) => (dispatch, getState) => {
 
   dispatch({
     type: ADD_SHOPPING_CART_TYPE,
-    payload: product,
+    payload: product[0],
   });
 };
 

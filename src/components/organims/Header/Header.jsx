@@ -42,8 +42,8 @@ const Header = ({ history: { goBack }, location: { pathname }, openMenu }) => {
 };
 
 Header.propTypes = {
-  goBack: PropTypes.func.isRequired,
-  pathname: PropTypes.string.isRequired,
+  goBack: PropTypes.func,
+  pathname: PropTypes.string,
   openMenu: PropTypes.func.isRequired,
 };
 

@@ -32,7 +32,7 @@ const Product = ({ match: { params }, products, addToCart }) => {
 
   return (
     <Fragment>
-      {product.id && (
+      {product.id !== undefined && (
         <div className="pProduct">
           <div className="pProduct_image">
             <ProductImage images={product.images} name={product.name} />
@@ -40,7 +40,7 @@ const Product = ({ match: { params }, products, addToCart }) => {
           <div className="wrapper">
             <div className="pProduct_head">
               <Heading className="pProduct_head-title">{product.name}</Heading>
-              <Heading type="primary-two">$ {product.price} USD</Heading>
+              <Heading type="primary-two">{`$ ${product.price} USD`}</Heading>
             </div>
             {product.description && (
               <Paragraph>{product.description}</Paragraph>
@@ -65,7 +65,7 @@ const Product = ({ match: { params }, products, addToCart }) => {
 };
 
 Product.propTypes = {
-  params: PropTypes.node.isRequired,
+  params: PropTypes.node,
   products: PropTypes.array.isRequired,
   addToCart: PropTypes.func.isRequired,
 };

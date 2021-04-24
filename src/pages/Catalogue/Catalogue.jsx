@@ -43,8 +43,12 @@ const Catalogue = ({
 
   return (
     <section className="catalogue wrapper">
-      <Heading>{category.name}</Heading>
-      <Paragraph>{category.description}</Paragraph>
+      {category.name && (
+        <React.Fragment>
+          <Heading>{category.name}</Heading>
+          <Paragraph>{category.description}</Paragraph>
+        </React.Fragment>
+      )}
       {productsData.length ? (
         <TemCatalogue>
           {productsData.map((item, key) => (
@@ -65,10 +69,10 @@ const Catalogue = ({
 };
 
 Catalogue.propTypes = {
-  params: PropTypes.node.isRequired,
-  goBack: PropTypes.func.isRequired,
-  CategoriesReducer: PropTypes.node.isRequired,
-  ProductReducer: PropTypes.node.isRequired,
+  params: PropTypes.node,
+  goBack: PropTypes.func,
+  categories: PropTypes.array,
+  products: PropTypes.array,
 };
 
 const mapStateToProps = ({ CategoriesReducer, ProductReducer }) => {

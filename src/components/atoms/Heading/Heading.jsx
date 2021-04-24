@@ -19,7 +19,7 @@ Heading.propTypes = {
   className: PropTypes.string,
 };
 
-Greeting.defaultProps = {
+Heading.defaultProps = {
   type: "primary",
   className: "",
 };

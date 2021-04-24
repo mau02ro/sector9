@@ -19,7 +19,7 @@ const CartCard = ({ image, name, price, children, actionIcon }) => {
       </div>
       <div className="cartCard_content">
         <Heading type="secondary">{name}</Heading>
-        <Heading type="secondary-two">$ {price} USD</Heading>
+        <Heading type="secondary-two">{`$ ${price} USD`}</Heading>
       </div>
     </div>
   );

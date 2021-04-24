@@ -36,7 +36,7 @@ const Categories = ({ match: { params }, categories }) => {
 };
 
 Categories.propTypes = {
-  params: PropTypes.node.isRequired,
+  params: PropTypes.node,
   categories: PropTypes.array.isRequired,
 };
 

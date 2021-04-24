@@ -25,16 +25,20 @@ const ShoppingCart = ({ shoppingCart, removeToCart }) => {
   }, [shoppingCart]);
 
   const handleRemoveToCart = () => {
-    removeToCart(shoppingCart[indexProduct].id);
+    removeToCart(indexProduct);
     setIndexProduct(null);
+  };
+
+  const handlePay = () => {
+    alert(":)");
   };
 
   return (
     <section className="wrapper shoppingCart">
       <Heading>carrito de compras</Heading>
       <div className="shoppingCart_info">
-        <Heading type="secondary">{shoppingCart.length} productos</Heading>
-        <Heading type="primary-two">$ {total} USD</Heading>
+        <Heading type="secondary">{`${shoppingCart.length} productos`}</Heading>
+        <Heading type="primary-two">{`$ ${total} USD`}</Heading>
       </div>
 
       <span className="shoppingCart_line"></span>
@@ -66,7 +70,7 @@ const ShoppingCart = ({ shoppingCart, removeToCart }) => {
           </div>
 
           <div className="shoppingCart_pay">
-            <Button>
+            <Button action={handlePay}>
               <Image
                 src="https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/icon%2Fpaypal.svg?alt=media&token=dea9942a-8e9d-4715-9006-686510840bbb"
                 alt="Logo PayPal"
@@ -75,34 +79,39 @@ const ShoppingCart = ({ shoppingCart, removeToCart }) => {
               pagar con paypal
             </Button>
           </div>
+
+          {indexProduct !== null && (
+            <CartOperations
+              className="shoppingCart_modal"
+              controller={indexProduct !== null}
+              close={() => setIndexProduct(null)}
+            >
+              <CartCard
+                image={shoppingCart[indexProduct].images[0]}
+                name={shoppingCart[indexProduct].name}
+                price={shoppingCart[indexProduct].price}
+              />
+              <Button type="danger" action={handleRemoveToCart}>
+                Eliminar
+              </Button>
+            </CartOperations>
+          )}
         </React.Fragment>
       )}
-
-      <CartOperations
-        className="shoppingCart_modal"
-        controller={indexProduct !== null}
-        close={() => setIndexProduct(null)}
-      >
-        <CartCard
-          image={shoppingCart[indexProduct].images[0]}
-          name={shoppingCart[indexProduct].name}
-          price={shoppingCart[indexProduct].price}
-        />
-        <Button type="danger" action={handleRemoveToCart}>
-          Eliminar
-        </Button>
-      </CartOperations>
     </section>
   );
 };
 
 ShoppingCart.propTypes = {
-  shoppingCart: PropTypes.array.isRequired,
+  shoppingCart: PropTypes.array,
   removeToCart: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = ({ AppReducer: { shoppingCart } }) => shoppingCart;
+ShoppingCart.defaultProps = {
+  shoppingCart: [],
+};
 
+const mapStateToProps = ({ AppReducer }) => AppReducer;
 const mapDispatchToProps = {
   removeToCart,
 };

@@ -23,7 +23,7 @@ const ProductFeatures = ({ about }) => {
               <div className="">
                 {item.value.map((subItem) => (
                   <Paragraph key={subItem.key}>
-                    {firstLetterUppercase(subItem.key)}: {subItem.value}
+                    {`${firstLetterUppercase(subItem.key)}}: ${subItem.value}`}
                   </Paragraph>
                 ))}
               </div>

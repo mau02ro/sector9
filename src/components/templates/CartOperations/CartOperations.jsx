@@ -29,7 +29,7 @@ const CartOperations = ({ children, className, controller, close }) => {
 };
 
 CartOperations.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.any.isRequired,
   className: PropTypes.string,
   controller: PropTypes.bool.isRequired,
   close: PropTypes.func.isRequired,
