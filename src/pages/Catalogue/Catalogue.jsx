@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 import Heading from "../../components/atoms/Heading";
 import Paragraph from "../../components/atoms/Paragraph";
@@ -62,6 +63,13 @@ const Catalogue = ({
       )}
     </section>
   );
+};
+
+Catalogue.propTypes = {
+  params: PropTypes.node.isRequired,
+  goBack: PropTypes.func.isRequired,
+  CategoriesReducer: PropTypes.node.isRequired,
+  ProductReducer: PropTypes.node.isRequired,
 };
 
 const mapStateToProps = ({ CategoriesReducer, ProductReducer }) => {
