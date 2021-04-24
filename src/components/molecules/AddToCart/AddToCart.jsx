@@ -21,7 +21,7 @@ const AddToCart = ({ name, price, images }) => {
           <Heading type="secondary">agregado al carrito</Heading>
         </span>
 
-        <CartCard name={name} price={price} images={images} />
+        <CartCard name={name} price={price} image={images[0]} />
       </div>
       <div className="addToCart_buttons">
         <Button.Link href="/shopping-cart">carrito y caja</Button.Link>
