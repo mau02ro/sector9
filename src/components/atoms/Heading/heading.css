@@ -4,7 +4,7 @@
   line-height: 16px;
   letter-spacing: 0.2px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-text);
 }
 .heading-primary {
   margin-bottom: 16px;
@@ -18,18 +18,16 @@
   opacity: 0.8;
   white-space: nowrap;
 }
-
 .heading-secondary {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.35px;
-  color: #ffffff;
+  color: var(--color-text);
   mix-blend-mode: normal;
   opacity: 0.8;
   margin-bottom: 8px;
 }
-
 .heading-secondary-two {
   font-style: normal;
   font-weight: 600;
@@ -39,7 +37,6 @@
   mix-blend-mode: normal;
   margin-bottom: 8px;
 }
-
 .heading-tertiary {
   font-style: normal;
   font-weight: 500;

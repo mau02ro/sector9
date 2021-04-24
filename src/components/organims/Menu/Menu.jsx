@@ -1,6 +1,7 @@
 import React from "react";
 import className from "classnames";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import Image from "../../atoms/Image";
 
@@ -12,7 +13,7 @@ const Menu = ({ open, close }) => {
       <div className="menu_logo">
         <Image
           src="https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/logos%2Fsmall.png?alt=media&token=9384109f-8c79-4d4a-a885-bb7c6e4f2827"
-          alt="Logo"
+          alt="Logo - Sector9"
           maxWidth="80px"
         />
       </div>
@@ -24,7 +25,7 @@ const Menu = ({ open, close }) => {
               home
               <Image
                 src="https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/icon%2Farrow.svg?alt=media&token=f7ed69f0-d3e2-4771-b5ce-07f94efdf035"
-                alt="Arrow"
+                alt="Arrow - Icon"
                 maxWidth="10px"
               />
             </Link>
@@ -34,7 +35,7 @@ const Menu = ({ open, close }) => {
               tablas
               <Image
                 src="https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/icon%2Farrow.svg?alt=media&token=f7ed69f0-d3e2-4771-b5ce-07f94efdf035"
-                alt="Arrow"
+                alt="Arrow - Icon"
                 maxWidth="10px"
               />
             </Link>
@@ -44,7 +45,7 @@ const Menu = ({ open, close }) => {
               bases
               <Image
                 src="https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/icon%2Farrow.svg?alt=media&token=f7ed69f0-d3e2-4771-b5ce-07f94efdf035"
-                alt="Arrow"
+                alt="Arrow - Icon"
                 maxWidth="10px"
               />
             </Link>
@@ -58,7 +59,7 @@ const Menu = ({ open, close }) => {
               llantas
               <Image
                 src="https://firebasestorage.googleapis.com/v0/b/sector9-f542b.appspot.com/o/icon%2Farrow.svg?alt=media&token=f7ed69f0-d3e2-4771-b5ce-07f94efdf035"
-                alt="Arrow"
+                alt="Arrow - Icon"
                 maxWidth="10px"
               />
             </Link>
@@ -67,6 +68,11 @@ const Menu = ({ open, close }) => {
       </nav>
     </section>
   );
+};
+
+Menu.propTypes = {
+  open: PropTypes.bool.isRequired,
+  close: PropTypes.func.isRequired,
 };
 
 export default Menu;

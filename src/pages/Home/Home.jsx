@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
 import Heading from "../../components/atoms/Heading";
@@ -30,6 +30,10 @@ const Home = ({ categories }) => {
   );
 };
 
+Home.propTypes = {
+  categories: PropTypes.array.isRequired,
+};
+
 const mapStateToProps = ({ CategoriesReducer }) => CategoriesReducer;
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps, null)(Home);

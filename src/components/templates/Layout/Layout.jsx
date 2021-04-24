@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 import Header from "../../organims/Header";
 import Onboarding from "../Onboarding";
@@ -10,20 +11,18 @@ const Layout = ({ children }) => {
   const [visited, setVisited] = useState(false);
   const [controllerMenu, setControllerMenu] = useState(false);
 
-  const handleVisited = () => {
-    setVisited(true);
-  };
-
   return (
     <div className="layout">
       <Header openMenu={() => setControllerMenu(true)} />
-
-      <div className="">{children}</div>
-
       <Menu open={controllerMenu} close={() => setControllerMenu(false)} />
-      {!visited && <Onboarding setVisited={handleVisited} />}
+      <div className="layout_content">{children}</div>
+      {/* {!visited && <Onboarding setVisited={() => setVisited(true)} />} */}
     </div>
   );
+};
+
+Layout.propTypes = {
+  children: PropTypes.element.isRequired,
 };
 
 export default Layout;

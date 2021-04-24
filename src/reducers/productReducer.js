@@ -2,7 +2,7 @@ const INITIAL_STATE = {
   products: [
     // tablas
     {
-      id: 1,
+      id: 0,
       product: "tablas",
       category: "classix",
       name: "basilisk deck",
@@ -40,7 +40,7 @@ const INITIAL_STATE = {
     },
 
     {
-      id: 2,
+      id: 1,
       product: "tablas",
       category: "downhill",
       name: "ripped luis pro deck",
@@ -77,7 +77,7 @@ const INITIAL_STATE = {
     },
 
     {
-      id: 3,
+      id: 2,
       product: "tablas",
       category: "platinum",
       name: "canyon catapult deck",
@@ -115,7 +115,7 @@ const INITIAL_STATE = {
     },
 
     {
-      id: 4,
+      id: 3,
       product: "tablas",
       category: "platinum",
       name: "daybreak static deck",
@@ -152,7 +152,7 @@ const INITIAL_STATE = {
 
     // Bases
     {
-      id: 5,
+      id: 4,
       product: "bases",
       category: "sidewinder ii",
       name: "sidewinder ii silver",
@@ -178,7 +178,7 @@ const INITIAL_STATE = {
       ],
     },
     {
-      id: 6,
+      id: 5,
       product: "bases",
       category: "sidewinder ii",
       name: "gullwing reverse black",
@@ -204,7 +204,7 @@ const INITIAL_STATE = {
       ],
     },
     {
-      id: 7,
+      id: 6,
       product: "bases",
       category: "reverse",
       name: "gullwing reverse black",
@@ -230,7 +230,7 @@ const INITIAL_STATE = {
       ],
     },
     {
-      id: 8,
+      id: 7,
       product: "bases",
       category: "reverse",
       name: "gullwing reverse white",
@@ -258,7 +258,7 @@ const INITIAL_STATE = {
 
     // LLantas
     {
-      id: 9,
+      id: 8,
       product: "llantas",
       category: "nineballs",
       name: "64mm 78a nineballs green",
@@ -294,7 +294,7 @@ const INITIAL_STATE = {
       ],
     },
     {
-      id: 10,
+      id: 9,
       product: "llantas",
       category: "nineballs",
       name: "74mm 78a nineballs red",
@@ -331,7 +331,7 @@ const INITIAL_STATE = {
     },
 
     {
-      id: 11,
+      id: 10,
       product: "llantas",
       category: "race formula",
       name: "70mm race formula white",
@@ -366,7 +366,7 @@ const INITIAL_STATE = {
       ],
     },
     {
-      id: 12,
+      id: 11,
       product: "llantas",
       category: "race formula",
       name: "70mm offset yellow",
@@ -396,7 +396,7 @@ const INITIAL_STATE = {
       ],
     },
     {
-      id: 13,
+      id: 12,
       product: "llantas",
       category: "race formula",
       name: "70mm centerset blue",

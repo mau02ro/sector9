@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 import Heading from "../../components/atoms/Heading";
 import Paragraph from "../../components/atoms/Paragraph";
 import Button from "../../components/atoms/Button";
 import Product from "../../components/molecules/Product";
-
 import TemCatalogue from "../../components/organims/TemCatalogue";
 
 import "./Catalogue.css";
@@ -43,8 +43,12 @@ const Catalogue = ({
 
   return (
     <section className="catalogue wrapper">
-      <Heading>{category.name}</Heading>
-      <Paragraph>{category.description}</Paragraph>
+      {category.name && (
+        <React.Fragment>
+          <Heading>{category.name}</Heading>
+          <Paragraph>{category.description}</Paragraph>
+        </React.Fragment>
+      )}
       {productsData.length ? (
         <TemCatalogue>
           {productsData.map((item, key) => (
@@ -62,6 +66,13 @@ const Catalogue = ({
       )}
     </section>
   );
+};
+
+Catalogue.propTypes = {
+  params: PropTypes.node,
+  goBack: PropTypes.func,
+  categories: PropTypes.array,
+  products: PropTypes.array,
 };
 
 const mapStateToProps = ({ CategoriesReducer, ProductReducer }) => {

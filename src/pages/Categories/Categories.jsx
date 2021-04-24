@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
 import Heading from "../../components/atoms/Heading";
@@ -33,6 +33,11 @@ const Categories = ({ match: { params }, categories }) => {
       )}
     </section>
   );
+};
+
+Categories.propTypes = {
+  params: PropTypes.node,
+  categories: PropTypes.array.isRequired,
 };
 
 const mapStateToProps = ({ CategoriesReducer }) => CategoriesReducer;
