@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import Heading from "../../atoms/Heading";
 import Paragraph from "../../atoms/Paragraph";
@@ -39,6 +40,10 @@ const ProductFeatures = ({ about }) => {
       })}
     </div>
   );
+};
+
+ProductFeatures.propTypes = {
+  about: PropTypes.array.isRequired,
 };
 
 export default ProductFeatures;
