@@ -4,7 +4,7 @@ import {
 } from "../types/appReducer";
 
 const INITIAL_STATE = {
-  shoppingCart: [1, 5, 10, 3],
+  shoppingCart: [],
   loading: false,
   error: null,
 };
@@ -19,7 +19,7 @@ export default (state = INITIAL_STATE, action) => {
       return {
         ...state,
         shoppingCart: state.shoppingCart.filter(
-          (item) => item !== action.payload
+          (item) => item.id !== action.payload
         ),
       };
 
